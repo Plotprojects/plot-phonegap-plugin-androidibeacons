@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.plotprojects.cordova.androidibeacons"
+        version="1.7.0">
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <name>PlotBeacons</name>
+    <description>Use the Plot library for Location Based Notifications in your Cordova/PhoneGap app. This is an additional plugin for iBeacon support for Android.</description>
+    <author>Floating Market B.V.</author>
+    <keywords>plot,plotprojects,location,notification,beacons,ibeacons</keywords>
+    <license>Apache 2.0 License</license>
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PlotCordovaPluginAndroidiBeacons">
+                <param name="android-package" value="com.plotprojects.cordova.androidibeacons.PlotCordovaPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/android-beacon-library-2.0.jar" target-dir="libs" framework="true" />
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+            <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">               
+                <service android:enabled="true"
+                         android:exported="true"
+                         android:isolatedProcess="false"
+                         android:label="beacon"
+                         android:name="org.altbeacon.beacon.service.BeaconService" />
+        
+                <service android:enabled="true"
+                         android:name="org.altbeacon.beacon.BeaconIntentProcessor" />       
+        </config-file>
+
+    </platform>
+    <info>Please see our plugin documentation for more information: http://www.plotprojects.com/plot-app-library-documentation-latest/</info>
+</plugin>
