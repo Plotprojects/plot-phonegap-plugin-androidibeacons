@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.plotprojects.cordova.androidibeacons"
-        version="1.7.0">
+        version="1.11.0">
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
@@ -19,7 +19,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/android-beacon-library-2.0.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/android-beacon-library-2.5.1.jar" target-dir="libs" framework="true" />
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.BLUETOOTH"/>

@@ -1,0 +1,40 @@
+{
+  "name": "cordova-plotprojects-android-beacon",
+  "version": "1.11.0",
+  "description": "Use the Plot library for Location Based Notifications in your Cordova/PhoneGap app. This is an additional plugin for iBeacon support for Android.",
+  "cordova": {
+    "id": "com.plotprojects.cordova.androidibeacons",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Plotprojects/plot-phonegap-plugin-androidibeacons.git"
+  },
+  "keywords": [
+    "plot",
+    "plotprojects",
+    "location",
+    "notification",
+    "beacons",
+    "ibeacons",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Plot Projects <info@plotprojects.com> (http://www.plotprojects.com)",
+  "license": "Apache 2.0 License",
+  "bugs": {
+    "url": "https://github.com/Plotprojects/plot-phonegap-plugin-androidibeacons/issues"
+  },
+  "homepage": "https://github.com/Plotprojects/plot-phonegap-plugin-androidibeacons#readme",
+  "dependencies" : {
+  	"cordova-plotprojects" : ">=1.11.0"
+  }
+}
