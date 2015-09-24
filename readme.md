@@ -10,9 +10,9 @@ This plugin is created just for Android.
 ### Installation ###
 
 You can add the plugin to an existing project by executing the following command:
-```phonegap local plugin add https://github.com/Plotprojects/plot-phonegap-plugin-androidibeacons/```
+```phonegap plugin add cordova-plotprojects-android-beacon```
 or 
-```cordova plugin add https://github.com/Plotprojects/plot-phonegap-plugin-androidibeacons/```
+```cordova plugin add cordova-plotprojects-android-beacon```
 in case you are using Cordova.
 
 You're now set to use iBeacons in your Android app!
